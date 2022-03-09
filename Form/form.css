@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form {
+    padding: 40px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+select, 
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+input[type="text"]::placeholder, 
+input[type="tel"]::placeholder, 
+input[type="email"]::placeholder, 
+textarea::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border-color: rgb(68, 176, 255);
+}
+
+:focus {
+    outline: 2px;
+}
+
+textarea {
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10x;
+    min-height: 42px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+select {
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0iIzFhNzNlOCI+PHBhdGggZD0iTTE0LjgzIDE2LjQyTDI0IDI1LjU5bDkuMTctOS4xN0wzNiAxOS4yNWwtMTIgMTItMTItMTJ6Ii8+PHBhdGggZD0iTTAtLjc1aDQ4djQ4SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5rem;
+}
+/* select'e webkit-appearance none vererek ok stillendirmesini kaldırıp kendimiz stil verdik 
+1.5rem 24px'e denk */
+
+.radio-container label {
+    display: inline-block;
+
+}
+
+.radio-container label + label {
+    margin-left: 20px;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    border: 0;
+    background-color: #eee;
+}
+
+button[type="submit"] {
+    margin-left: 15px;
+    color: white;
+    background-color: rgb(68, 176, 255);
+}
